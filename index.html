@@ -1,0 +1,958 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>UNUK | Ungal Nilam Ungal Kaiyil - Luxury Real Estate & Live CCTV Land Platform</title>
+  <meta name="description" content="Tamil Nadu's Most Trusted Eco-Luxury Real Estate & Plot Platform. Monitor your land investments 24/7 with Live CCTV streaming and regular work-done video progress reports." />
+  <link rel="stylesheet" href="./index.css" />
+  <!-- FontAwesome Icons for Luxury Real Estate UI -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+</head>
+<body>
+
+  <!-- TOP ANNOUNCEMENT & CONCIERGE BAR -->
+  <div class="top-bar">
+    <div class="container top-bar-inner">
+      <div class="top-bar-left">
+        <span class="live-badge">
+          <span class="live-dot"></span> 24/7 LIVE CCTV PLOT MONITORING ACTIVE
+        </span>
+        <span><i class="fa-solid fa-shield-halved" style="color: #063820;"></i> 100% DTCP & RERA Approved Legal Clear Title</span>
+      </div>
+      <div class="top-bar-right">
+        <a href="tel:+919884088840" style="color: #063820; text-decoration: none; font-weight: 800;"><i class="fa-solid fa-phone-volume" style="color: #0A5C36;"></i> Concierge: +91 98840 88840</a>
+        <a href="https://wa.me/919884088840?text=Hello%20UNUK%2C%20I%20am%20interested%20in%20DTCP%20approved%20plots." target="_blank" class="top-wa-badge"><i class="fa-brands fa-whatsapp"></i> WhatsApp Us</a>
+        <button class="lang-toggle" id="langToggleBtn" title="Switch Language">
+          <i class="fa-solid fa-language"></i> <span id="langLabel">தமிழ் / English</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- STICKY EXECUTIVE NAVBAR -->
+  <header class="navbar" id="mainNavbar">
+    <div class="container navbar-inner">
+      <a href="#" class="brand-logo">
+        <div class="logo-emblem-cutout">
+          <img src="./assets/unuk-logo.jpg" alt="UNUK Real Estate Emblem" />
+        </div>
+        <div class="logo-text">
+          <span class="logo-main">UNUK</span>
+          <span class="logo-sub tamil-text">உங்கள் நிலம் உங்கள் கையில்</span>
+        </div>
+      </a>
+
+      <ul class="nav-links">
+        <li><a href="#home" class="nav-link active">Home</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#cctv-live" class="nav-link">Live CCTV</a></li>
+        <li><a href="#districts" class="nav-link">District Map</a></li>
+        <li><a href="#roi-calculator" class="nav-link">ROI Calculator</a></li>
+        <li><a href="#services" class="nav-link">Services</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <button class="btn btn-outline" id="cctvPortalBtn"><i class="fa-solid fa-video"></i> Investor Portal</button>
+        <button class="btn btn-primary" id="scheduleVisitHeaderBtn"><i class="fa-solid fa-calendar-check"></i> Schedule Site Visit</button>
+        <button class="mobile-toggle" id="mobileMenuOpen" aria-label="Open Mobile Menu">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- MOBILE NAVIGATION DRAWER -->
+  <div class="mobile-drawer" id="mobileDrawer">
+    <div style="display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid rgba(255,255,255,0.15); padding-bottom: 16px;">
+      <span style="font-weight: 800; font-size: 1.3rem; color: var(--gold-light);">UNUK MENU</span>
+      <button id="mobileMenuClose" style="background: none; border: none; color: #FFF; font-size: 1.5rem; cursor: pointer;">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+    </div>
+    <ul class="drawer-links">
+      <li><a href="#home" class="mobile-nav-link">Home</a></li>
+      <li><a href="#projects" class="mobile-nav-link">Featured Projects</a></li>
+      <li><a href="#cctv-live" class="mobile-nav-link">Live Land CCTV</a></li>
+      <li><a href="#districts" class="mobile-nav-link">District Explorer</a></li>
+      <li><a href="#roi-calculator" class="mobile-nav-link">ROI Calculator</a></li>
+      <li><a href="#services" class="mobile-nav-link">Our Services</a></li>
+      <li><a href="#contact" class="mobile-nav-link">Concierge Contact</a></li>
+    </ul>
+    <div style="margin-top: 40px; display: flex; flex-direction: column; gap: 12px;">
+      <button class="btn btn-gold" id="drawerScheduleBtn" style="width: 100%;">Schedule Site Visit</button>
+      <button class="btn btn-outline" id="drawerCctvBtn" style="width: 100%; border-color: #FFF; color: #FFF;">Investor Portal Login</button>
+    </div>
+  </div>
+
+  <!-- HERO SECTION WITH ARCHITECTURAL AERIAL BACKGROUND -->
+  <section class="hero-section" id="home" style="background-image: url('./assets/unuk_luxury_plot_hero.png');">
+    <div class="hero-overlay"></div>
+    <div class="container">
+      <div class="hero-content">
+        <div class="hero-tag">
+          <i class="fa-solid fa-crown"></i> TAMIL NADU'S PREMIER REAL ESTATE PLATFORM
+        </div>
+        <h1 class="hero-title">
+          Ungal Nilam <br /><span>Ungal Kaiyil</span>
+        </h1>
+        <span class="hero-tamil tamil-text">உங்கள் நிலம் உங்கள் கையில்</span>
+        <p class="hero-desc">
+          Invest with total peace of mind in high-end DTCP & RERA approved eco-luxury plots across Tamil Nadu. Experience unprecedented transparency with our <strong>24/7 Live Solar CCTV Streaming</strong> & bi-weekly drone development logs.
+        </p>
+        <div class="hero-ctas">
+          <a href="#projects" class="btn btn-gold"><i class="fa-solid fa-compass"></i> Explore Verified Plots</a>
+          <button class="btn btn-outline" id="droneTourBtn" style="border-color: var(--yellow-primary); color: #FFF;"><i class="fa-solid fa-drone"></i> Request 4K Drone Tour</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CASAGRAND-INSPIRED INTERACTIVE PROPERTY FINDER BAR -->
+  <section class="property-search-section">
+    <div class="container">
+      <div class="property-search-card">
+        <div class="search-grid">
+          <div class="search-field">
+            <label for="searchDistrict"><i class="fa-solid fa-location-dot"></i> District / Corridor</label>
+            <select id="searchDistrict">
+              <option value="all">All Tamil Nadu Corridors</option>
+              <option value="chennai">Chennai & OMR Growth Corridor</option>
+              <option value="coimbatore">Coimbatore Saravanampatti Hub</option>
+              <option value="madurai">Madurai Ring Road Highway</option>
+              <option value="erode">Erode & Salem Industrial Corridor</option>
+              <option value="trichy">Trichy Smart City Hub</option>
+            </select>
+          </div>
+
+          <div class="search-field">
+            <label for="searchType"><i class="fa-solid fa-layer-group"></i> Property Type</label>
+            <select id="searchType">
+              <option value="all">All Property Types</option>
+              <option value="luxury-plot">Eco-Luxury Gated Plots</option>
+              <option value="dtcp-layout">DTCP Approved Layouts</option>
+              <option value="farm-villa">Organic Farm Villa Plots</option>
+              <option value="commercial">Commercial Highway Land</option>
+            </select>
+          </div>
+
+          <div class="search-field">
+            <label for="searchBudget"><i class="fa-solid fa-coins"></i> Investment Range</label>
+            <select id="searchBudget">
+              <option value="all">All Budget Ranges</option>
+              <option value="budget-low">₹15 Lakhs - ₹35 Lakhs</option>
+              <option value="budget-mid">₹35 Lakhs - ₹75 Lakhs</option>
+              <option value="budget-high">₹75 Lakhs & Above</option>
+            </select>
+          </div>
+
+          <div class="search-field">
+            <label for="searchStatus"><i class="fa-solid fa-video"></i> Monitoring Status</label>
+            <select id="searchStatus">
+              <option value="all">All Statuses</option>
+              <option value="cctv-live">24/7 Live CCTV Monitored</option>
+              <option value="ready">Ready for Immediate Registration</option>
+            </select>
+          </div>
+
+          <div>
+            <button class="btn btn-primary" id="filterSearchBtn" style="width: 100%; min-height: 48px;">
+              <i class="fa-solid fa-magnifying-glass"></i> Search Plots
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SCALE & TRUST METRICS COUNTER BAR -->
+  <section class="stats-bar">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat-item">
+          <div class="stat-number">100%</div>
+          <div class="stat-label">DTCP & RERA Title Clear</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">24/7</div>
+          <div class="stat-label">Live Solar CCTV Access</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">15+</div>
+          <div class="stat-label">Prime District Corridors</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">3,800+</div>
+          <div class="stat-label">Verified Landowners Worldwide</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURED PROJECTS SHOWCASE (CASAGRAND STYLE) -->
+  <section class="section-pad" id="projects">
+    <div class="container">
+      <div class="section-header">
+        <span class="sub-title">Verified Layouts</span>
+        <h2 class="main-title">Exquisite Land & Villa Plot Communities</h2>
+        <p class="main-desc">
+          Handpicked high-appreciation residential and eco-luxury plots across Tamil Nadu, equipped with live perimeter CCTV cameras and complete legal scrutiny.
+        </p>
+      </div>
+
+      <!-- Filter Tabs -->
+      <div class="filter-tabs" id="projectCategoryTabs">
+        <button class="tab-btn active" data-category="all">All Layouts</button>
+        <button class="tab-btn" data-category="luxury-plot">Eco-Luxury Plots</button>
+        <button class="tab-btn" data-category="dtcp-layout">DTCP Approved</button>
+        <button class="tab-btn" data-category="cctv-live">Live CCTV Monitored</button>
+      </div>
+
+      <!-- Projects Grid -->
+      <!-- Projects Grid with Real Video Walkthroughs -->
+      <div class="projects-grid" id="projectsGridContainer">
+
+        <!-- Project 1 -->
+        <div class="project-card" data-category="luxury-plot cctv-live" data-district="chennai" data-budget="budget-mid">
+          <div class="project-media">
+            <span class="cctv-live-tag"><span class="live-dot"></span> LIVE CCTV MONITORED</span>
+            <span class="status-badge">Fast Selling</span>
+            <video src="./assets/Videos/VID-20260320-WA0006.mp4" poster="./assets/unuk_layout_overview.png" controls preload="metadata" playsinline></video>
+          </div>
+          <div class="project-body">
+            <div class="project-location">CHENNAI - ECR / OMR CORRIDOR</div>
+            <h3 class="project-title">UNUK Royale Green Courtyard</h3>
+            <p style="font-size: 0.92rem; color: var(--text-muted);">
+              Luxury gated villa plots with 40ft blacktop avenue roads, solar lighting, and 24/7 dedicated site CCTV cameras. Watch live video above.
+            </p>
+            <div class="project-specs">
+              <span class="spec-item"><i class="fa-solid fa-ruler-combined"></i> 1,200 - 3,400 Sq.Ft</span>
+              <span class="spec-item"><i class="fa-solid fa-check-double"></i> DTCP / RERA</span>
+              <span class="spec-item"><i class="fa-solid fa-tree"></i> Avenue Parks</span>
+            </div>
+            <div class="project-footer">
+              <div class="project-price">
+                ₹48.5 Lakhs <span>onwards</span>
+              </div>
+              <button class="btn btn-primary open-cctv-modal" data-title="UNUK Royale Green Courtyard" style="padding: 8px 14px; font-size: 0.82rem;">
+                <i class="fa-solid fa-video"></i> Live Stream
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="project-card" data-category="dtcp-layout cctv-live" data-district="coimbatore" data-budget="budget-mid">
+          <div class="project-media">
+            <span class="cctv-live-tag"><span class="live-dot"></span> LIVE CCTV MONITORED</span>
+            <span class="status-badge">New Launch</span>
+            <video src="./assets/Videos/VID-20260320-WA0007.mp4" poster="./assets/unuk_luxury_plot_hero.png" controls preload="metadata" playsinline></video>
+          </div>
+          <div class="project-body">
+            <div class="project-location">COIMBATORE - SARAVANAMPATTI HUB</div>
+            <h3 class="project-title">UNUK Kovai Emerald Valley</h3>
+            <p style="font-size: 0.92rem; color: var(--text-muted);">
+              Situated near IT park corridor. High appreciation potential with lush organic coconut grove environment and club amenities.
+            </p>
+            <div class="project-specs">
+              <span class="spec-item"><i class="fa-solid fa-ruler-combined"></i> 1,500 - 4,000 Sq.Ft</span>
+              <span class="spec-item"><i class="fa-solid fa-check-double"></i> DTCP Approved</span>
+              <span class="spec-item"><i class="fa-solid fa-road"></i> 60ft Main Road</span>
+            </div>
+            <div class="project-footer">
+              <div class="project-price">
+                ₹39 Lakhs <span>onwards</span>
+              </div>
+              <button class="btn btn-primary open-cctv-modal" data-title="UNUK Kovai Emerald Valley" style="padding: 8px 14px; font-size: 0.82rem;">
+                <i class="fa-solid fa-video"></i> Live Stream
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="project-card" data-category="dtcp-layout" data-district="madurai" data-budget="budget-low">
+          <div class="project-media">
+            <span class="status-badge">85% Sold</span>
+            <video src="./assets/Videos/VID-20260320-WA0014.mp4" poster="./assets/unuk_layout_overview.png" controls preload="metadata" playsinline></video>
+          </div>
+          <div class="project-body">
+            <div class="project-location">MADURAI - HIGHWAY RING ROAD</div>
+            <h3 class="project-title">UNUK Madurai Heritage Enclave</h3>
+            <p style="font-size: 0.92rem; color: var(--text-muted);">
+              Direct highway frontage residential plots ready for immediate villa construction with municipal water supply connection.
+            </p>
+            <div class="project-specs">
+              <span class="spec-item"><i class="fa-solid fa-ruler-combined"></i> 1,000 - 2,400 Sq.Ft</span>
+              <span class="spec-item"><i class="fa-solid fa-check-double"></i> RERA Approved</span>
+              <span class="spec-item"><i class="fa-solid fa-water"></i> Metro Water</span>
+            </div>
+            <div class="project-footer">
+              <div class="project-price">
+                ₹22 Lakhs <span>onwards</span>
+              </div>
+              <button class="btn btn-primary open-sitevisit-modal" data-title="UNUK Madurai Heritage Enclave" style="padding: 8px 14px; font-size: 0.82rem;">
+                <i class="fa-solid fa-calendar"></i> Book Visit
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 4 -->
+        <div class="project-card" data-category="luxury-plot cctv-live" data-district="erode" data-budget="budget-mid">
+          <div class="project-media">
+            <span class="cctv-live-tag"><span class="live-dot"></span> LIVE CCTV MONITORED</span>
+            <span class="status-badge">Premium</span>
+            <video src="./assets/Videos/VID-20260320-WA0015.mp4" poster="./assets/unuk_luxury_plot_hero.png" controls preload="metadata" playsinline></video>
+          </div>
+          <div class="project-body">
+            <div class="project-location">ERODE - PERUNDURAI CORRIDOR</div>
+            <h3 class="project-title">UNUK Cauvery Riverside Enclave</h3>
+            <p style="font-size: 0.92rem; color: var(--text-muted);">
+              Scenic river-view farm villa plots and residential layout featuring 24/7 perimeter solar cameras and organic soil quality.
+            </p>
+            <div class="project-specs">
+              <span class="spec-item"><i class="fa-solid fa-ruler-combined"></i> 2,400 - 6,000 Sq.Ft</span>
+              <span class="spec-item"><i class="fa-solid fa-check-double"></i> DTCP Approved</span>
+              <span class="spec-item"><i class="fa-solid fa-seedling"></i> Organic Farm</span>
+            </div>
+            <div class="project-footer">
+              <div class="project-price">
+                ₹34.5 Lakhs <span>onwards</span>
+              </div>
+              <button class="btn btn-primary open-cctv-modal" data-title="UNUK Cauvery Riverside Enclave" style="padding: 8px 14px; font-size: 0.82rem;">
+                <i class="fa-solid fa-video"></i> Live Stream
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 5 -->
+        <div class="project-card" data-category="dtcp-layout" data-district="trichy" data-budget="budget-low">
+          <div class="project-media">
+            <span class="status-badge">Investment Hub</span>
+            <video src="./assets/Videos/VID-20260320-WA0016.mp4" poster="./assets/unuk_layout_overview.png" controls preload="metadata" playsinline></video>
+          </div>
+          <div class="project-body">
+            <div class="project-location">TRICHY - AIRPORT CORRIDOR</div>
+            <h3 class="project-title">UNUK Trichy Airport Smart Plots</h3>
+            <p style="font-size: 0.92rem; color: var(--text-muted);">
+              Strategic land plots located 10 mins from international airport. Exceptional ROI growth and clear freehold title deeds.
+            </p>
+            <div class="project-specs">
+              <span class="spec-item"><i class="fa-solid fa-ruler-combined"></i> 1,200 - 3,000 Sq.Ft</span>
+              <span class="spec-item"><i class="fa-solid fa-check-double"></i> DTCP / RERA</span>
+              <span class="spec-item"><i class="fa-solid fa-plane"></i> Near Airport</span>
+            </div>
+            <div class="project-footer">
+              <div class="project-price">
+                ₹26.8 Lakhs <span>onwards</span>
+              </div>
+              <button class="btn btn-primary open-sitevisit-modal" data-title="UNUK Trichy Airport Smart Plots" style="padding: 8px 14px; font-size: 0.82rem;">
+                <i class="fa-solid fa-calendar"></i> Book Visit
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 6 -->
+        <div class="project-card" data-category="luxury-plot cctv-live" data-district="chennai" data-budget="budget-high">
+          <div class="project-media">
+            <span class="cctv-live-tag"><span class="live-dot"></span> LIVE CCTV MONITORED</span>
+            <span class="status-badge">Ultra Luxury</span>
+            <video src="./assets/Videos/VID-20260320-WA0017.mp4" poster="./assets/unuk_luxury_plot_hero.png" controls preload="metadata" playsinline></video>
+          </div>
+          <div class="project-body">
+            <div class="project-location">CHENNAI - ECR SEASIDE CORRIDOR</div>
+            <h3 class="project-title">UNUK Platinum ECR Beachside</h3>
+            <p style="font-size: 0.92rem; color: var(--text-muted);">
+              Exclusive gated beachside plot layout designed for ultra-luxury private villas with clubhouse access and 4K CCTV security.
+            </p>
+            <div class="project-specs">
+              <span class="spec-item"><i class="fa-solid fa-ruler-combined"></i> 3,600 - 8,000 Sq.Ft</span>
+              <span class="spec-item"><i class="fa-solid fa-check-double"></i> DTCP Platinum</span>
+              <span class="spec-item"><i class="fa-solid fa-umbrella-beach"></i> Beach Access</span>
+            </div>
+            <div class="project-footer">
+              <div class="project-price">
+                ₹89 Lakhs <span>onwards</span>
+              </div>
+              <button class="btn btn-primary open-cctv-modal" data-title="UNUK Platinum ECR Beachside" style="padding: 8px 14px; font-size: 0.82rem;">
+                <i class="fa-solid fa-video"></i> Live Stream
+              </button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- OUR PROJECTS: 4K DRONE & SITE FOOTAGE VIDEO SHOWCASE GALLERY -->
+  <section class="video-gallery-section section-pad" id="project-videos">
+    <div class="container">
+      <div class="section-header">
+        <span class="sub-title">Authentic Site Footage</span>
+        <h2 class="main-title">Our Projects: 4K Drone & Layout Walkthroughs</h2>
+        <p class="main-desc">
+          Watch verified on-ground development logs, blacktop road laying, compound wall construction, and live site tours across our Tamil Nadu communities.
+        </p>
+      </div>
+
+      <div class="video-grid">
+        <!-- Video Card 1 -->
+        <div class="video-card">
+          <div class="video-player-wrapper">
+            <video src="./assets/Videos/VID-20260320-WA0018.mp4" controls preload="metadata" playsinline></video>
+          </div>
+          <div class="video-card-body">
+            <span style="font-size: 0.78rem; color: var(--green-dark); font-weight: 800; text-transform: uppercase;">Avenue Roadway Tour</span>
+            <h4 class="video-card-title">ECR Corridor - Blacktop Road Laying Progress</h4>
+            <p style="font-size: 0.88rem; color: var(--text-muted);">40ft avenue tar road completion with underground cabling & street lighting.</p>
+          </div>
+        </div>
+
+        <!-- Video Card 2 -->
+        <div class="video-card">
+          <div class="video-player-wrapper">
+            <video src="./assets/Videos/VID-20260320-WA0019.mp4" controls preload="metadata" playsinline></video>
+          </div>
+          <div class="video-card-body">
+            <span style="font-size: 0.78rem; color: var(--green-dark); font-weight: 800; text-transform: uppercase;">Perimeter Security</span>
+            <h4 class="video-card-title">Royale Green - Grand Entrance Arch & Solar CCTV</h4>
+            <p style="font-size: 0.88rem; color: var(--text-muted);">24/7 solar security tower setup and gated security checkpoint demonstration.</p>
+          </div>
+        </div>
+
+        <!-- Video Card 3 -->
+        <div class="video-card">
+          <div class="video-player-wrapper">
+            <video src="./assets/Videos/VID-20260320-WA0020.mp4" controls preload="metadata" playsinline></video>
+          </div>
+          <div class="video-card-body">
+            <span style="font-size: 0.78rem; color: var(--green-dark); font-weight: 800; text-transform: uppercase;">Aerial Drone View</span>
+            <h4 class="video-card-title">Kovai Emerald Valley - Coconut Grove Layout</h4>
+            <p style="font-size: 0.88rem; color: var(--text-muted);">Full aerial drone panorama showing lush organic surroundings and connectivity.</p>
+          </div>
+        </div>
+
+        <!-- Video Card 4 -->
+        <div class="video-card">
+          <div class="video-player-wrapper">
+            <video src="./assets/Videos/VID-20260320-WA0021.mp4" controls preload="metadata" playsinline></video>
+          </div>
+          <div class="video-card-body">
+            <span style="font-size: 0.78rem; color: var(--green-dark); font-weight: 800; text-transform: uppercase;">Site Inspection</span>
+            <h4 class="video-card-title">Madurai Heritage Enclave - Boundary Marking</h4>
+            <p style="font-size: 0.88rem; color: var(--text-muted);">DTCP plot stone demarcations and municipal pipeline connections.</p>
+          </div>
+        </div>
+
+        <!-- Video Card 5 -->
+        <div class="video-card">
+          <div class="video-player-wrapper">
+            <video src="./assets/Videos/VID-20260320-WA0022.mp4" controls preload="metadata" playsinline></video>
+          </div>
+          <div class="video-card-body">
+            <span style="font-size: 0.78rem; color: var(--green-dark); font-weight: 800; text-transform: uppercase;">Highway Frontage</span>
+            <h4 class="video-card-title">Trichy Airport Hub - Highway Access Walkthrough</h4>
+            <p style="font-size: 0.88rem; color: var(--text-muted);">Direct connectivity to national highway ring road and smart city corridor.</p>
+          </div>
+        </div>
+
+        <!-- Video Card 6 -->
+        <div class="video-card">
+          <div class="video-player-wrapper">
+            <video src="./assets/Videos/VID-20260320-WA0023.mp4" controls preload="metadata" playsinline></video>
+          </div>
+          <div class="video-card-body">
+            <span style="font-size: 0.78rem; color: var(--green-dark); font-weight: 800; text-transform: uppercase;">Community Parks</span>
+            <h4 class="video-card-title">Cauvery Riverside - Avenue Trees & Park Area</h4>
+            <p style="font-size: 0.88rem; color: var(--text-muted);">Landscaping, park development, and eco-friendly rain water harvesting systems.</p>
+          </div>
+        </div>
+      </div>
+
+      <div style="text-align: center; margin-top: 36px;">
+        <button class="btn btn-primary open-sitevisit-modal" style="padding: 13px 32px; font-size: 1rem;">
+          <i class="fa-solid fa-video"></i> Request Custom Live Video Walkthrough
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- LIVE CCTV & WORK PROGRESS DEMONSTRATION SECTION -->
+  <section class="cctv-section section-pad" id="cctv-live">
+    <div class="container">
+      <div class="cctv-container">
+        <!-- Live Video Simulator Player -->
+        <div class="cctv-player-box">
+          <div class="cctv-video-frame">
+            <div class="cctv-overlay-top">
+              <span class="cctv-rec"><span class="live-dot"></span> REC ACTIVE STREAM</span>
+              <span class="cctv-timestamp" id="liveTimestampClock">2026-07-11 10:12:45 IST</span>
+            </div>
+            <video id="cctvStreamVideo" src="./assets/Videos/VID-20260320-WA0024.mp4" autoplay muted loop playsinline controls style="width: 100%; height: 100%; object-fit: cover;"></video>
+          </div>
+          <div class="cctv-camera-selector">
+            <button class="cam-btn active" data-vid="./assets/Videos/VID-20260320-WA0024.mp4" data-label="CAM 01: Grand Entrance & Highway Access">
+              <i class="fa-solid fa-video"></i> CAM 01: Entrance Gate
+            </button>
+            <button class="cam-btn" data-vid="./assets/Videos/VID-20260320-WA0025.mp4" data-label="CAM 02: North Avenue 40ft Roadway">
+              <i class="fa-solid fa-camera"></i> CAM 02: Avenue Roadway
+            </button>
+            <button class="cam-btn" data-vid="./assets/Videos/VID-20260320-WA0006.mp4" data-label="CAM 03: Perimeter Solar Surveillance">
+              <i class="fa-solid fa-satellite-dish"></i> CAM 03: Plot Perimeter
+            </button>
+          </div>
+        </div>
+
+        <!-- CCTV Information Column -->
+        <div>
+          <span class="sub-title" style="background: rgba(16, 185, 129, 0.25); color: var(--green-light);">Signature Innovation</span>
+          <h2 style="font-size: 2.3rem; font-weight: 800; line-height: 1.2; margin: 16px 0;">
+            Monitor Your Plot From Anywhere in the World
+          </h2>
+          <p style="color: #CBD5E1; font-size: 1.08rem; margin-bottom: 24px;">
+            Whether you live in Chennai, Dubai, Singapore, or California—UNUK ensures you never feel distant from your land investment. Every project site is equipped with high-definition solar CCTV cameras accessible 24/7 via your private investor portal.
+          </p>
+          <div style="display: flex; flex-direction: column; gap: 16px; margin-bottom: 30px;">
+            <div style="display: flex; align-items: flex-start; gap: 14px;">
+              <div style="background: rgba(16, 185, 129, 0.25); color: var(--green-light); width: 38px; height: 38px; border-radius: 8px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; font-size: 1.1rem;">
+                <i class="fa-solid fa-tower-broadcast"></i>
+              </div>
+              <div>
+                <h4 style="font-size: 1.05rem; font-weight: 700;">24/7 Solar-Powered HD Streaming</h4>
+                <p style="color: #94A3B8; font-size: 0.9rem;">High-resolution cameras powered by off-grid solar panels ensuring zero downtime even during weather fluctuations.</p>
+              </div>
+            </div>
+
+            <div style="display: flex; align-items: flex-start; gap: 14px;">
+              <div style="background: rgba(16, 185, 129, 0.25); color: var(--green-light); width: 38px; height: 38px; border-radius: 8px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; font-size: 1.1rem;">
+                <i class="fa-solid fa-video"></i>
+              </div>
+              <div>
+                <h4 style="font-size: 1.05rem; font-weight: 700;">Regular Work Done Video Updates</h4>
+                <p style="color: #94A3B8; font-size: 0.9rem;">Bi-weekly 4K drone progress videos documenting road laying, avenue tree planting, and compound wall construction.</p>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <button class="btn btn-gold open-portal-modal">
+              <i class="fa-solid fa-user-lock"></i> Investor Portal Login
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TAMIL NADU DISTRICT LAND EXPLORER -->
+  <section class="section-pad" id="districts">
+    <div class="container">
+      <div class="section-header">
+        <span class="sub-title">Corridor Focus</span>
+        <h2 class="main-title">Explore High-Growth Tamil Nadu Districts</h2>
+        <p class="main-desc">
+          Click on any district to filter verified DTCP and eco-luxury plot opportunities across Tamil Nadu's fastest appreciating corridors.
+        </p>
+      </div>
+
+      <div class="district-grid">
+        <div class="district-card filter-district-card" data-district="chennai">
+          <div class="district-name">Chennai & OMR</div>
+          <div class="district-tamil tamil-text">சென்னை & புறநகர்</div>
+          <p style="font-size: 0.88rem; color: var(--text-muted); margin-bottom: 16px;">
+            IT Highway corridor, ECR beachside developments, and upcoming metro extensions.
+          </p>
+          <div class="district-stats">
+            <span><strong>12</strong> Active Sites</span>
+            <span style="color: var(--yellow-dark); font-weight: 700;">+18.4% YoY</span>
+          </div>
+        </div>
+
+        <div class="district-card filter-district-card" data-district="coimbatore">
+          <div class="district-name">Coimbatore</div>
+          <div class="district-tamil tamil-text">கோயம்புத்தூர்</div>
+          <p style="font-size: 0.88rem; color: var(--text-muted); margin-bottom: 16px;">
+            Saravanampatti IT Park corridor, Avinashi road, and pleasant Western Ghats foothills.
+          </p>
+          <div class="district-stats">
+            <span><strong>8</strong> Active Sites</span>
+            <span style="color: var(--yellow-dark); font-weight: 700;">+21.2% YoY</span>
+          </div>
+        </div>
+
+        <div class="district-card filter-district-card" data-district="madurai">
+          <div class="district-name">Madurai</div>
+          <div class="district-tamil tamil-text">மதுரை</div>
+          <p style="font-size: 0.88rem; color: var(--text-muted); margin-bottom: 16px;">
+            Outer ring road infrastructure corridor, industrial growth hubs, and heritage value.
+          </p>
+          <div class="district-stats">
+            <span><strong>6</strong> Active Sites</span>
+            <span style="color: var(--yellow-dark); font-weight: 700;">+16.8% YoY</span>
+          </div>
+        </div>
+
+        <div class="district-card filter-district-card" data-district="trichy">
+          <div class="district-name">Trichy & Erode</div>
+          <div class="district-tamil tamil-text">திருச்சி & ஈரோடு</div>
+          <p style="font-size: 0.88rem; color: var(--text-muted); margin-bottom: 16px;">
+            Smart airport corridor, Perundurai industrial expressway, and Cauvery river belt.
+          </p>
+          <div class="district-stats">
+            <span><strong>9</strong> Active Sites</span>
+            <span style="color: var(--yellow-dark); font-weight: 700;">+17.5% YoY</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- INTERACTIVE LAND APPRECIATION & ROI CALCULATOR -->
+  <section class="section-pad" id="roi-calculator" style="background-color: var(--yellow-subtle);">
+    <div class="container">
+      <div class="section-header">
+        <span class="sub-title">Wealth Creation</span>
+        <h2 class="main-title">Interactive Land ROI & Appreciation Matrix</h2>
+        <p class="main-desc">
+          Calculate the projected wealth accumulation on your UNUK plot investment based on historical 18% annual capital appreciation across our corridors.
+        </p>
+      </div>
+
+      <div class="roi-card">
+        <div>
+          <h3 style="font-size: 1.8rem; font-weight: 900; color: #063820; margin-bottom: 24px;">
+            Simulate Your Land Investment Growth
+          </h3>
+
+          <div class="slider-group">
+            <div class="slider-header">
+              <span style="color: #063820;">Initial Investment Amount</span>
+              <span id="roiAmountLabel" style="color: #0A5C36; font-weight: 900;">₹40,00,000</span>
+            </div>
+            <input type="range" class="calc-slider" id="roiAmountSlider" min="1500000" max="15000000" step="250000" value="4000000" />
+            <div style="display: flex; justify-content: space-between; font-size: 0.82rem; font-weight: 800; color: #063820; margin-top: 6px;">
+              <span>₹15 Lakhs</span>
+              <span>₹1.5 Crores</span>
+            </div>
+          </div>
+
+          <div class="slider-group">
+            <div class="slider-header">
+              <span style="color: #063820;">Holding Duration</span>
+              <span id="roiYearsLabel" style="color: #0A5C36; font-weight: 900;">5 Years</span>
+            </div>
+            <input type="range" class="calc-slider" id="roiYearsSlider" min="3" max="15" step="1" value="5" />
+            <div style="display: flex; justify-content: space-between; font-size: 0.82rem; font-weight: 800; color: #063820; margin-top: 6px;">
+              <span>3 Years</span>
+              <span>15 Years</span>
+            </div>
+          </div>
+
+          <p style="font-size: 0.90rem; font-weight: 700; color: #063820; line-height: 1.5; margin-top: 18px;">
+            *Calculated using a conservative corridor appreciation rate of 17.8% CAGR based on DTCP highway expansion indexes. Land ownership incurs zero depreciation.
+          </p>
+        </div>
+
+        <div class="roi-result-box">
+          <span style="font-size: 0.92rem; font-weight: 900; color: #063820; text-transform: uppercase;">Projected Land Valuation</span>
+          <div class="roi-number" id="roiTotalValueDisplay" style="color: #0A5C36;">₹90.8 Lakhs</div>
+          <div style="display: flex; justify-content: space-around; border-top: 2px solid rgba(10, 92, 54, 0.2); padding-top: 18px; margin-top: 18px;">
+            <div>
+              <div style="font-size: 0.80rem; font-weight: 800; color: #063820;">NET WEALTH GAIN</div>
+              <div style="font-size: 1.3rem; font-weight: 900; color: #0A5C36;" id="roiGainDisplay">+₹50.8 Lakhs</div>
+            </div>
+            <div>
+              <div style="font-size: 0.80rem; font-weight: 800; color: #063820;">ESTIMATED CAGR</div>
+              <div style="font-size: 1.3rem; font-weight: 900; color: #0A5C36;">17.8%</div>
+            </div>
+          </div>
+          <button class="btn btn-primary open-sitevisit-modal" style="margin-top: 24px; width: 100%;">
+            <i class="fa-solid fa-file-contract"></i> Request Free Appraisal Report
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CORE SERVICES PILLARS (WHY CHOOSE US) -->
+  <section class="section-pad" id="services">
+    <div class="container">
+      <div class="section-header">
+        <span class="sub-title">Our Pillars</span>
+        <h2 class="main-title">End-to-End Land Ownership Services</h2>
+        <p class="main-desc">
+          From DTCP title scrutiny to digital property management, UNUK provides complete lifecycle support.
+        </p>
+      </div>
+
+      <div class="services-grid">
+        <div class="service-card">
+          <div class="service-icon"><i class="fa-solid fa-handshake"></i></div>
+          <h3 class="service-title">Buying Guidance</h3>
+          <p style="color: var(--text-muted); font-size: 0.94rem;">
+            Find verified properties with expert Vastu, legal title verification, and DTCP layout selection for the perfect match.
+          </p>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon"><i class="fa-solid fa-bullhorn"></i></div>
+          <h3 class="service-title">Selling & Marketing</h3>
+          <p style="color: var(--text-muted); font-size: 0.94rem;">
+            Sell confidently with top 4K drone videography tools and reach serious high-net-worth buyers fast across our network.
+          </p>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon"><i class="fa-solid fa-satellite-dish"></i></div>
+          <h3 class="service-title">Live CCTV Access</h3>
+          <p style="color: var(--text-muted); font-size: 0.94rem;">
+            View your land via Live Solar CCTV and receive regular HD work-done progress videos directly to your portal.
+          </p>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon"><i class="fa-solid fa-key"></i></div>
+          <h3 class="service-title">Leasing & Maintenance</h3>
+          <p style="color: var(--text-muted); font-size: 0.94rem;">
+            Rent your property hassle-free, arrange boundary fencing, and connect with reliable tenants and caretakers quickly.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CUSTOMER TESTIMONIALS & NRI CORNER -->
+  <section class="section-pad" id="testimonials" style="background-color: var(--bg-warm-light);">
+    <div class="container">
+      <div class="section-header">
+        <span class="sub-title">Landowner Voices</span>
+        <h2 class="main-title">Trusted by Families & NRI Investors</h2>
+        <p class="main-desc">
+          Hear from our community of landowners who experience total transparency through our live monitoring platform.
+        </p>
+      </div>
+
+      <div class="testimonials-grid">
+        <div class="review-card">
+          <div class="review-stars">
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+          </div>
+          <p class="review-text">
+            "Living in Singapore, I was always hesitant to invest in plots in Chennai. UNUK changed everything—being able to open my phone and watch live CCTV of my plot gate and road progress is incredible peace of mind."
+          </p>
+          <div class="review-author">
+            <div class="author-avatar">SK</div>
+            <div>
+              <div style="font-weight: 700; color: var(--dark-900);">Senthil Kumar V.</div>
+              <div style="font-size: 0.8rem; color: var(--text-muted);">NRI Investor - Singapore | Owner in Royale Green</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="review-card">
+          <div class="review-stars">
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+          </div>
+          <p class="review-text">
+            "We booked a plot in Coimbatore after taking the 4K Live Drone tour with the Tamil-speaking concierge. The legal documents were 100% DTCP clear, and registration was finished smoothly in one day."
+          </p>
+          <div class="review-author">
+            <div class="author-avatar">AN</div>
+            <div>
+              <div style="font-weight: 700; color: var(--dark-900);">Anitha & Narayanan R.</div>
+              <div style="font-size: 0.8rem; color: var(--text-muted);">Coimbatore | Kovai Emerald Valley</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="review-card">
+          <div class="review-stars">
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+          </div>
+          <p class="review-text">
+            "UNUK’s Work Done video logs every two weeks showed the street lights and drainage installation timestamped. Truly Tamil Nadu's most transparent real estate brand."
+          </p>
+          <div class="review-author">
+            <div class="author-avatar">PR</div>
+            <div>
+              <div style="font-weight: 700; color: var(--dark-900);">Dr. Prakash Rajan</div>
+              <div style="font-size: 0.8rem; color: var(--text-muted);">Chennai | ECR Platinum Layout</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CASAGRAND-INSPIRED LUXURY FOOTER -->
+  <footer class="luxury-footer" id="contact">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <div class="brand-logo" style="margin-bottom: 18px;">
+            <div class="logo-emblem-cutout">
+              <img src="./assets/unuk-logo.jpg" alt="UNUK Real Estate Emblem" />
+            </div>
+            <div class="logo-text">
+              <span class="logo-main" style="color: #063820;">UNUK</span>
+              <span class="logo-sub tamil-text" style="color: #0A5C36;">உங்கள் நிலம் உங்கள் கையில்</span>
+            </div>
+          </div>
+          <p style="color: #063820; font-size: 0.92rem; margin-bottom: 20px; max-width: 340px; font-weight: 600;">
+            Ungal Nilam Ungal Kaiyil (UNUK) is Tamil Nadu's leading eco-luxury land & plot platform combining 100% DTCP legal clarity with 24/7 Live Solar CCTV site monitoring.
+          </p>
+          <div style="display: flex; gap: 14px; font-size: 1.3rem;">
+            <a href="https://wa.me/919884088840" style="color: #0A5C36;"><i class="fa-brands fa-whatsapp"></i></a>
+            <a href="#" style="color: #0A5C36;"><i class="fa-brands fa-youtube"></i></a>
+            <a href="#" style="color: #0A5C36;"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" style="color: #0A5C36;"><i class="fa-brands fa-linkedin"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Explore Layouts</h4>
+          <ul class="footer-links">
+            <li><a href="#projects">Chennai OMR Corridor</a></li>
+            <li><a href="#projects">Coimbatore Saravanampatti</a></li>
+            <li><a href="#projects">Madurai Highway Ring</a></li>
+            <li><a href="#projects">Erode & Salem Projects</a></li>
+            <li><a href="#projects">Trichy Smart Hub</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="#cctv-live">Live CCTV Monitoring</a></li>
+            <li><a href="#roi-calculator">ROI & Appreciation Matrix</a></li>
+            <li><a href="#services">Buying & Legal Scrutiny</a></li>
+            <li><a href="#services">NRI Concierge Desk</a></li>
+            <li><a href="#contact">Contact Relationship Mgr</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Tamil & English Concierge</h4>
+          <p style="color: #063820; font-size: 0.9rem; margin-bottom: 14px; font-weight: 600;">
+            Book a dedicated 4K Live Drone walkthrough or speak with our Tamil Nadu land specialist.
+          </p>
+          <div style="margin-bottom: 12px; font-weight: 800; color: #063820;">
+            <a href="tel:+919884088840" style="color: #063820; text-decoration: none;"><i class="fa-solid fa-phone-volume" style="color: #0A5C36;"></i> +91 98840 88840</a>
+          </div>
+          <div style="margin-bottom: 14px; font-weight: 800; color: #063820;">
+            <a href="https://wa.me/919884088840?text=Hello%20UNUK%2C%20I%20am%20interested%20in%20DTCP%20approved%20plots." target="_blank" style="color: #063820; text-decoration: none;"><i class="fa-brands fa-whatsapp" style="color: #25D366; font-size: 1.15rem;"></i> Direct WhatsApp Chat</a>
+          </div>
+          <div style="margin-bottom: 20px; font-weight: 800; color: #063820;">
+            <a href="mailto:unuk.rcs@gmail.com" style="color: #063820; text-decoration: none;"><i class="fa-solid fa-envelope" style="color: #0A5C36;"></i> unuk.rcs@gmail.com</a>
+          </div>
+          <button class="btn btn-primary open-sitevisit-modal" style="width: 100%;">
+            <i class="fa-solid fa-calendar-check"></i> Book Site Visit / Drone Tour
+          </button>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          © 2026 UNUK (Ungal Nilam Ungal Kaiyil). All Rights Reserved. RERA Registered & DTCP Approved Partners.
+        </div>
+        <div style="display: flex; gap: 20px;">
+          <a href="#" style="color: #063820; text-decoration: none;">Privacy Policy</a>
+          <a href="#" style="color: #063820; text-decoration: none;">Terms of Service</a>
+          <a href="#" style="color: #063820; text-decoration: none;">RERA Disclosures</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- MODAL: SCHEDULE SITE VISIT / DRONE TOUR -->
+  <div class="modal-overlay" id="siteVisitModal">
+    <div class="modal-card">
+      <button class="modal-close closeModalBtn"><i class="fa-solid fa-xmark"></i></button>
+      <h3 style="font-size: 1.5rem; font-weight: 800; color: var(--dark-900); margin-bottom: 6px;">
+        Schedule VIP Site Visit / 4K Drone Tour
+      </h3>
+      <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 22px;">
+        Our Tamil or English speaking concierge will arrange complimentary cab pickup or a live 4K drone streaming session.
+      </p>
+
+      <form id="scheduleForm">
+        <div class="form-group">
+          <label>Your Full Name *</label>
+          <input type="text" placeholder="e.g. Senthil Nathan" required />
+        </div>
+
+        <div class="form-group">
+          <label>Phone / WhatsApp Number *</label>
+          <input type="tel" placeholder="+91 / +65 / +971 ..." required />
+        </div>
+
+        <div class="form-group">
+          <label>Preferred Project Corridor</label>
+          <select id="modalProjectSelect">
+            <option>UNUK Royale Green Courtyard (Chennai)</option>
+            <option>UNUK Kovai Emerald Valley (Coimbatore)</option>
+            <option>UNUK Madurai Heritage Enclave (Madurai)</option>
+            <option>UNUK Cauvery Riverside Enclave (Erode)</option>
+            <option>UNUK Platinum ECR Beachside (Chennai)</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label>Tour Mode</label>
+          <select>
+            <option>Physical Site Visit (Complimentary Cab)</option>
+            <option>Live 4K Drone Walkthrough (Video Call)</option>
+          </select>
+        </div>
+
+        <button type="submit" class="btn btn-primary" style="width: 100%; margin-top: 10px;">
+          <i class="fa-solid fa-check"></i> Confirm Appointment
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <!-- MODAL: LIVE CCTV FEED PREVIEW -->
+  <div class="modal-overlay" id="cctvModal">
+    <div class="modal-card" style="max-width: 680px;">
+      <button class="modal-close closeModalBtn"><i class="fa-solid fa-xmark"></i></button>
+      <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 14px;">
+        <h3 id="cctvModalTitle" style="font-size: 1.35rem; font-weight: 800; color: var(--dark-900);">
+          Live CCTV Feed Preview
+        </h3>
+        <span class="live-badge"><span class="live-dot"></span> LIVE SITE STREAM</span>
+      </div>
+      <div style="border-radius: var(--radius-md); overflow: hidden; border: 2px solid var(--green-primary); aspect-ratio: 16/9; background: #000; position: relative;">
+        <video id="cctvModalVideo" src="./assets/Videos/VID-20260320-WA0006.mp4" autoplay muted loop playsinline controls style="width: 100%; height: 100%; object-fit: cover;"></video>
+        <div style="position: absolute; bottom: 12px; left: 12px; background: rgba(0,0,0,0.75); color: #FFF; padding: 4px 12px; border-radius: 6px; font-size: 0.8rem;">
+          CAM 01: Perimeter Gate & Solar Light Post
+        </div>
+      </div>
+      <p style="font-size: 0.88rem; color: var(--text-muted); margin-top: 14px;">
+        Full multi-camera PTZ control is available to registered plot owners inside the Investor Portal.
+      </p>
+      <div style="display: flex; gap: 12px; margin-top: 20px;">
+        <button class="btn btn-gold open-sitevisit-modal" style="flex: 1;">Schedule Visit to Site</button>
+        <button class="btn btn-primary closeModalBtn" style="flex: 1;">Close Stream</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- STICKY FLOATING WHATSAPP & CALL INTEGRATION WIDGET (ICONS ONLY) -->
+  <div class="floating-contact-widget">
+    <a href="https://wa.me/919884088840?text=Hello%20UNUK%2C%20I%20am%20interested%20in%20your%20DTCP%20approved%20plots." target="_blank" class="float-btn float-wa" title="Chat on WhatsApp" aria-label="WhatsApp Chat">
+      <i class="fa-brands fa-whatsapp"></i>
+    </a>
+    <a href="tel:+919884088840" class="float-btn float-call" title="Call Concierge" aria-label="Call Specialist">
+      <i class="fa-solid fa-phone-volume"></i>
+    </a>
+  </div>
+
+  <script src="./app.js"></script>
+</body>
+</html>
