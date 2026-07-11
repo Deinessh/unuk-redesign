@@ -1292,8 +1292,60 @@ body {
 }
 
 @media (max-width: 768px) {
+  html, body {
+    overflow-x: hidden !important;
+    width: 100% !important;
+  }
+  .hide-mobile {
+    display: none !important;
+  }
+  .top-bar {
+    padding: 8px 0;
+  }
+  .top-bar-inner {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 8px;
+  }
+  .top-bar-left, .top-bar-right {
+    justify-content: center;
+    gap: 12px;
+    width: 100%;
+    font-size: 0.76rem;
+  }
+  .navbar-inner {
+    height: 72px;
+    padding: 0 10px;
+    gap: 8px;
+  }
+  .brand-logo {
+    gap: 8px;
+  }
+  .logo-emblem-cutout {
+    width: 44px;
+  }
+  .logo-main {
+    font-size: 1.15rem;
+  }
+  .logo-sub {
+    font-size: 0.62rem;
+  }
+  .nav-actions {
+    gap: 6px;
+  }
   .nav-actions .btn-outline {
     display: none;
+  }
+  .nav-actions .btn-primary {
+    padding: 6px 10px;
+    font-size: 0.78rem;
+    white-space: nowrap;
+  }
+  .mobile-toggle {
+    font-size: 1.4rem;
+    padding: 4px;
   }
   .stats-grid {
     grid-template-columns: repeat(2, 1fr);
@@ -1316,6 +1368,30 @@ body {
   .floating-contact-widget {
     bottom: 16px;
     right: 16px;
+  }
+  .float-btn {
+    width: 48px;
+    height: 48px;
+    font-size: 1.35rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .top-bar-left span:nth-child(2) {
+    display: block;
+    width: 100%;
+  }
+  .hero-badge {
+    padding: 6px 12px;
+    font-size: 0.74rem;
+    line-height: 1.3;
+    max-width: 95%;
+  }
+  .hero-title {
+    font-size: 2.1rem;
+  }
+  .logo-sub {
+    display: none;
   }
 }
 
