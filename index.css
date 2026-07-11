@@ -1140,27 +1140,22 @@ body {
   color: #FFFFFF;
 }
 
-/* Full UNUK Brand Logo Image (Uncropped) */
+/* Full UNUK Emblem & Ribbon Badge Logo */
 .logo-emblem-cutout {
-  width: auto;
-  height: 68px;
+  width: 60px;
+  height: auto;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
-  background: transparent;
-  border: none;
-  box-shadow: none;
-  border-radius: 0;
-  overflow: visible;
+  filter: drop-shadow(0 2px 6px rgba(6, 56, 32, 0.25));
 }
 
 .logo-emblem-cutout img {
-  height: 100%;
-  width: auto;
+  width: 100%;
+  height: auto;
   object-fit: contain;
-  transform: none;
-  mix-blend-mode: multiply;
+  display: block;
 }
 
 /* Sticky Floating WhatsApp & Call Integration Widget (Icons Only) */
@@ -1297,9 +1292,6 @@ body {
 }
 
 @media (max-width: 768px) {
-  .logo-emblem-cutout {
-    height: 54px;
-  }
   .nav-actions .btn-outline {
     display: none;
   }
