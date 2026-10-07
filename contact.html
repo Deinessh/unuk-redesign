@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact UNUK Concierge | Book VIP Site Visit & 4K Drone Walkthrough</title>
+  <meta name="description" content="Get in touch with UNUK's Tamil & English concierge desk. Call +91 8973057212 or chat on WhatsApp for DTCP plot consultations." />
+  <link rel="canonical" href="https://unuk.co.in/contact.html" />
+  <link rel="stylesheet" href="./index.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+</head>
+<body>
+
+  <!-- TOP ANNOUNCEMENT & CONCIERGE BAR -->
+  <div class="top-bar">
+    <div class="container top-bar-inner">
+      <div class="top-bar-left">
+        <span class="live-badge">
+          <span class="live-dot"></span> 24/7 LIVE CCTV PLOT MONITORING ACTIVE
+        </span>
+        <span><i class="fa-solid fa-shield-halved" style="color: #063820;"></i> 100% DTCP & RERA Approved Legal Clear Title</span>
+      </div>
+      <div class="top-bar-right">
+        <a href="tel:+918973057212" style="color: #063820; text-decoration: none; font-weight: 800;"><i class="fa-solid fa-phone-volume" style="color: #0A5C36;"></i> Concierge: +91 8973057212</a>
+        <a href="https://wa.me/918973057212?text=Hello%20UNUK%2C%20I%20am%20interested%20in%20DTCP%20approved%20plots." target="_blank" class="top-wa-badge"><i class="fa-brands fa-whatsapp"></i> WhatsApp Us</a>
+        <button class="lang-toggle" id="langToggleBtn" title="Switch Language">
+          <i class="fa-solid fa-language"></i> <span id="langLabel">தமிழ் / English</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- STICKY EXECUTIVE NAVBAR -->
+  <header class="navbar" id="mainNavbar">
+    <div class="container navbar-inner">
+      <a href="index.html" class="brand-logo">
+        <div class="logo-emblem-cutout">
+          <img src="./assets/unuk-logo.png" alt="UNUK Real Estate Emblem" />
+        </div>
+        <div class="logo-text">
+          <span class="logo-main">UNUK</span>
+          <span class="logo-sub tamil-text">உங்கள் நிலம் உங்கள் கையில்</span>
+        </div>
+      </a>
+
+      <ul class="nav-links">
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="projects.html" class="nav-link">Projects</a></li>
+        <li><a href="cctv-live.html" class="nav-link">Live CCTV</a></li>
+        <li><a href="districts.html" class="nav-link">District Map</a></li>
+        <li><a href="roi-calculator.html" class="nav-link">ROI Calculator</a></li>
+        <li><a href="services.html" class="nav-link">Services</a></li>
+        <li><a href="about.html" class="nav-link">About Us</a></li>
+        <li><a href="contact.html" class="nav-link active">Contact</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <button class="btn btn-outline open-portal-modal" id="cctvPortalBtn"><i class="fa-solid fa-video"></i> Investor Portal</button>
+        <button class="btn btn-primary open-sitevisit-modal" id="scheduleVisitHeaderBtn"><i class="fa-solid fa-calendar-check"></i> <span class="hide-mobile">Schedule </span>Site Visit</button>
+        <button class="mobile-toggle" id="mobileMenuOpen" aria-label="Open Mobile Menu">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- MOBILE NAVIGATION DRAWER -->
+  <div class="mobile-drawer" id="mobileDrawer">
+    <div style="display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid rgba(255,255,255,0.15); padding-bottom: 16px;">
+      <span style="font-weight: 800; font-size: 1.3rem; color: var(--gold-light);">UNUK MENU</span>
+      <button id="mobileMenuClose" style="background: none; border: none; color: #FFF; font-size: 1.5rem; cursor: pointer;">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+    </div>
+    <ul class="drawer-links">
+      <li><a href="index.html" class="mobile-nav-link">Home</a></li>
+      <li><a href="projects.html" class="mobile-nav-link">Featured Projects</a></li>
+      <li><a href="cctv-live.html" class="mobile-nav-link">Live Land CCTV</a></li>
+      <li><a href="districts.html" class="mobile-nav-link">District Explorer</a></li>
+      <li><a href="roi-calculator.html" class="mobile-nav-link">ROI Calculator</a></li>
+      <li><a href="services.html" class="mobile-nav-link">Our Services</a></li>
+      <li><a href="about.html" class="mobile-nav-link">About Us</a></li>
+      <li><a href="contact.html" class="mobile-nav-link">Concierge Contact</a></li>
+    </ul>
+    <div style="margin-top: 40px; display: flex; flex-direction: column; gap: 12px;">
+      <button class="btn btn-gold open-sitevisit-modal" id="drawerScheduleBtn" style="width: 100%;">Schedule Site Visit</button>
+      <button class="btn btn-outline open-portal-modal" id="drawerCctvBtn" style="width: 100%; border-color: #FFF; color: #FFF;">Investor Portal Login</button>
+    </div>
+  </div>
+
+  <!-- HERO SECTION -->
+  <section class="hero-section" style="background-image: url('./assets/unuk_luxury_plot_hero.png'); min-height: 380px; padding: 120px 0 60px;">
+    <div class="hero-overlay"></div>
+    <div class="container" style="text-align: center; position: relative; z-index: 2;">
+      <div class="hero-tag" style="margin: 0 auto 16px;">
+        <i class="fa-solid fa-headset"></i> TAMIL & ENGLISH RELATIONSHIP DESK
+      </div>
+      <h1 class="hero-title" style="font-size: 2.8rem; line-height: 1.2;">
+        Get in Touch With <span>UNUK Concierge</span>
+      </h1>
+      <p class="hero-desc" style="max-width: 720px; margin: 16px auto 0;">
+        Speak directly with our Tamil Nadu land specialists, arrange complimentary cab site visits, or schedule a live 4K drone walkthrough.
+      </p>
+    </div>
+  </section>
+
+  <!-- CONTACT OPTIONS & FORM SECTION -->
+  <section class="section-pad">
+    <div class="container">
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px;">
+
+        <!-- Contact Information Cards -->
+        <div style="display: flex; flex-direction: column; gap: 20px;">
+          <div class="service-card" style="display: flex; align-items: center; gap: 20px;">
+            <div class="service-icon" style="margin-bottom: 0; min-width: 54px; height: 54px; font-size: 1.5rem;"><i class="fa-solid fa-phone-volume"></i></div>
+            <div>
+              <h3 style="font-size: 1.15rem; font-weight: 800; color: var(--dark-900);">Direct Phone Concierge</h3>
+              <p style="font-size: 0.95rem; color: var(--green-dark); font-weight: 700; margin-top: 4px;">
+                <a href="tel:+918973057212" style="color: inherit; text-decoration: none;">+91 8973057212</a>
+              </p>
+            </div>
+          </div>
+
+          <div class="service-card" style="display: flex; align-items: center; gap: 20px;">
+            <div class="service-icon" style="margin-bottom: 0; min-width: 54px; height: 54px; font-size: 1.5rem; background: rgba(37, 211, 102, 0.15); color: #25D366;"><i class="fa-brands fa-whatsapp"></i></div>
+            <div>
+              <h3 style="font-size: 1.15rem; font-weight: 800; color: var(--dark-900);">Instant WhatsApp Chat</h3>
+              <p style="font-size: 0.95rem; color: #25D366; font-weight: 700; margin-top: 4px;">
+                <a href="https://wa.me/918973057212?text=Hello%20UNUK%2C%20I%20am%20interested%20in%20DTCP%20approved%20plots." target="_blank" style="color: inherit; text-decoration: none;">Chat +91 8973057212</a>
+              </p>
+            </div>
+          </div>
+
+          <div class="service-card" style="display: flex; align-items: center; gap: 20px;">
+            <div class="service-icon" style="margin-bottom: 0; min-width: 54px; height: 54px; font-size: 1.5rem;"><i class="fa-solid fa-envelope"></i></div>
+            <div>
+              <h3 style="font-size: 1.15rem; font-weight: 800; color: var(--dark-900);">Official Email Desk</h3>
+              <p style="font-size: 0.95rem; color: var(--green-dark); font-weight: 700; margin-top: 4px;">
+                <a href="mailto:unuk.rcs@gmail.com" style="color: inherit; text-decoration: none;">unuk.rcs@gmail.com</a>
+              </p>
+            </div>
+          </div>
+
+          <div class="service-card" style="display: flex; align-items: center; gap: 20px;">
+            <div class="service-icon" style="margin-bottom: 0; min-width: 54px; height: 54px; font-size: 1.5rem;"><i class="fa-solid fa-location-dot"></i></div>
+            <div>
+              <h3 style="font-size: 1.15rem; font-weight: 800; color: var(--dark-900);">Headquarters</h3>
+              <p style="font-size: 0.9rem; color: var(--text-muted); margin-top: 4px;">
+                Chennai OMR Corridor & Coimbatore Saravanampatti Regional Operations, Tamil Nadu, India.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Interactive Contact / Appointment Booking Card -->
+        <div style="background: var(--yellow-subtle); padding: 36px; border-radius: var(--radius-lg); border: 2px solid var(--gold-light);">
+          <h3 style="font-size: 1.6rem; font-weight: 900; color: #063820; margin-bottom: 8px;">
+            Book VIP Site Visit / 4K Drone Tour
+          </h3>
+          <p style="color: #063820; font-size: 0.95rem; margin-bottom: 24px; font-weight: 600;">
+            Fill in your details below and our Tamil/English concierge team will contact you within 15 minutes.
+          </p>
+
+          <form id="contactPageForm">
+            <div class="form-group" style="margin-bottom: 16px;">
+              <label style="display: block; font-size: 0.88rem; font-weight: 800; color: #063820; margin-bottom: 6px;">Full Name *</label>
+              <input type="text" placeholder="e.g. Senthil Nathan" required style="width: 100%; padding: 12px; border-radius: 8px; border: 1px solid rgba(6,56,32,0.3);" />
+            </div>
+
+            <div class="form-group" style="margin-bottom: 16px;">
+              <label style="display: block; font-size: 0.88rem; font-weight: 800; color: #063820; margin-bottom: 6px;">Phone / WhatsApp Number *</label>
+              <input type="tel" placeholder="+91 / +65 / +971 ..." required style="width: 100%; padding: 12px; border-radius: 8px; border: 1px solid rgba(6,56,32,0.3);" />
+            </div>
+
+            <div class="form-group" style="margin-bottom: 16px;">
+              <label style="display: block; font-size: 0.88rem; font-weight: 800; color: #063820; margin-bottom: 6px;">Preferred Corridor</label>
+              <select style="width: 100%; padding: 12px; border-radius: 8px; border: 1px solid rgba(6,56,32,0.3);">
+                <option>Chennai ECR / OMR Growth Corridor</option>
+                <option>Coimbatore Saravanampatti Hub</option>
+                <option>Madurai Highway Ring Road</option>
+                <option>Erode & Salem Industrial Belt</option>
+                <option>Trichy Airport Corridor</option>
+              </select>
+            </div>
+
+            <div class="form-group" style="margin-bottom: 20px;">
+              <label style="display: block; font-size: 0.88rem; font-weight: 800; color: #063820; margin-bottom: 6px;">Your Message / Specific Requirements</label>
+              <textarea rows="4" placeholder="Tell us your budget, plot size preference, or visit date..." style="width: 100%; padding: 12px; border-radius: 8px; border: 1px solid rgba(6,56,32,0.3);"></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary" style="width: 100%; padding: 14px; font-size: 1rem;">
+              <i class="fa-solid fa-paper-plane"></i> Submit Inquiry
+            </button>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CASAGRAND-INSPIRED LUXURY FOOTER -->
+  <footer class="luxury-footer" id="contact">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <div class="brand-logo" style="margin-bottom: 18px;">
+            <div class="logo-emblem-cutout">
+              <img src="./assets/unuk-logo.png" alt="UNUK Real Estate Emblem" />
+            </div>
+            <div class="logo-text">
+              <span class="logo-main" style="color: #063820;">UNUK</span>
+              <span class="logo-sub tamil-text" style="color: #0A5C36;">உங்கள் நிலம் உங்கள் கையில்</span>
+            </div>
+          </div>
+          <p style="color: #063820; font-size: 0.92rem; margin-bottom: 20px; max-width: 340px; font-weight: 600;">
+            Ungal Nilam Ungal Kaiyil (UNUK) is Tamil Nadu's leading eco-luxury land & plot platform combining 100% DTCP legal clarity with 24/7 Live Solar CCTV site monitoring.
+          </p>
+          <div style="display: flex; gap: 14px; font-size: 1.3rem;">
+            <a href="https://wa.me/918973057212" style="color: #0A5C36;"><i class="fa-brands fa-whatsapp"></i></a>
+            <a href="#" style="color: #0A5C36;"><i class="fa-brands fa-youtube"></i></a>
+            <a href="#" style="color: #0A5C36;"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" style="color: #0A5C36;"><i class="fa-brands fa-linkedin"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Explore Layouts</h4>
+          <ul class="footer-links">
+            <li><a href="projects.html">Chennai OMR Corridor</a></li>
+            <li><a href="projects.html">Coimbatore Saravanampatti</a></li>
+            <li><a href="projects.html">Madurai Highway Ring</a></li>
+            <li><a href="projects.html">Erode & Salem Projects</a></li>
+            <li><a href="projects.html">Trichy Smart Hub</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="cctv-live.html">Live CCTV Monitoring</a></li>
+            <li><a href="roi-calculator.html">ROI & Appreciation Matrix</a></li>
+            <li><a href="services.html">Buying & Legal Scrutiny</a></li>
+            <li><a href="about.html">About Us & Testimonials</a></li>
+            <li><a href="contact.html">Contact Relationship Mgr</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Tamil & English Concierge</h4>
+          <p style="color: #063820; font-size: 0.9rem; margin-bottom: 14px; font-weight: 600;">
+            Book a dedicated 4K Live Drone walkthrough or speak with our Tamil Nadu land specialist.
+          </p>
+          <div style="margin-bottom: 12px; font-weight: 800; color: #063820;">
+            <a href="tel:+918973057212" style="color: #063820; text-decoration: none;"><i class="fa-solid fa-phone-volume" style="color: #0A5C36;"></i> +91 8973057212</a>
+          </div>
+          <div style="margin-bottom: 14px; font-weight: 800; color: #063820;">
+            <a href="https://wa.me/918973057212?text=Hello%20UNUK%2C%20I%20am%20interested%20in%20DTCP%20approved%20plots." target="_blank" style="color: #063820; text-decoration: none;"><i class="fa-brands fa-whatsapp" style="color: #25D366; font-size: 1.15rem;"></i> Direct WhatsApp Chat</a>
+          </div>
+          <div style="margin-bottom: 20px; font-weight: 800; color: #063820;">
+            <a href="mailto:unuk.rcs@gmail.com" style="color: #063820; text-decoration: none;"><i class="fa-solid fa-envelope" style="color: #0A5C36;"></i> unuk.rcs@gmail.com</a>
+          </div>
+          <button class="btn btn-primary open-sitevisit-modal" style="width: 100%;">
+            <i class="fa-solid fa-calendar-check"></i> Book Site Visit / Drone Tour
+          </button>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          © 2026 UNUK (Ungal Nilam Ungal Kaiyil). All Rights Reserved. RERA Registered & DTCP Approved Partners.
+        </div>
+        <div style="display: flex; gap: 20px;">
+          <a href="#" style="color: #063820; text-decoration: none;">Privacy Policy</a>
+          <a href="#" style="color: #063820; text-decoration: none;">Terms of Service</a>
+          <a href="#" style="color: #063820; text-decoration: none;">RERA Disclosures</a>
+        </div>
+      </div>
+
+      <div style="text-align: center; font-size: 0.9rem; font-weight: 700; color: #063820; margin-top: 20px; padding-top: 15px; border-top: 1px dashed rgba(6, 56, 32, 0.2);">
+        Developed by <a href="https://thunderfoxweb.co.in" target="_blank" style="color: #063820; text-decoration: none; font-weight: 900;">ThunderFoxWeb</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- MODALS -->
+  <div class="modal-overlay" id="siteVisitModal">
+    <div class="modal-card">
+      <button class="modal-close closeModalBtn"><i class="fa-solid fa-xmark"></i></button>
+      <h3 style="font-size: 1.5rem; font-weight: 800; color: var(--dark-900); margin-bottom: 6px;">
+        Schedule VIP Site Visit / 4K Drone Tour
+      </h3>
+      <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 22px;">
+        Our Tamil or English speaking concierge will arrange complimentary cab pickup or a live 4K drone streaming session.
+      </p>
+
+      <form id="scheduleForm">
+        <div class="form-group">
+          <label>Your Full Name *</label>
+          <input type="text" placeholder="e.g. Senthil Nathan" required />
+        </div>
+
+        <div class="form-group">
+          <label>Phone / WhatsApp Number *</label>
+          <input type="tel" placeholder="+91 / +65 / +971 ..." required />
+        </div>
+
+        <div class="form-group">
+          <label>Preferred Project Corridor</label>
+          <select id="modalProjectSelect">
+            <option>UNUK Royale Green Courtyard (Chennai)</option>
+            <option>UNUK Kovai Emerald Valley (Coimbatore)</option>
+            <option>UNUK Madurai Heritage Enclave (Madurai)</option>
+            <option>UNUK Cauvery Riverside Enclave (Erode)</option>
+            <option>UNUK Platinum ECR Beachside (Chennai)</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label>Tour Mode</label>
+          <select>
+            <option>Physical Site Visit (Complimentary Cab)</option>
+            <option>Live 4K Drone Walkthrough (Video Call)</option>
+          </select>
+        </div>
+
+        <button type="submit" class="btn btn-primary" style="width: 100%; margin-top: 10px;">
+          <i class="fa-solid fa-check"></i> Confirm Appointment
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <div class="modal-overlay" id="cctvModal">
+    <div class="modal-card" style="max-width: 680px;">
+      <button class="modal-close closeModalBtn"><i class="fa-solid fa-xmark"></i></button>
+      <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 14px;">
+        <h3 id="cctvModalTitle" style="font-size: 1.35rem; font-weight: 800; color: var(--dark-900);">
+          Live CCTV Feed Preview
+        </h3>
+        <span class="live-badge"><span class="live-dot"></span> LIVE SITE STREAM</span>
+      </div>
+      <div style="border-radius: var(--radius-md); overflow: hidden; border: 2px solid var(--green-primary); aspect-ratio: 16/9; background: #000; position: relative;">
+        <video id="cctvModalVideo" src="./assets/Videos/VID-20260320-WA0006.mp4" autoplay muted loop playsinline controls style="width: 100%; height: 100%; object-fit: cover;"></video>
+        <div style="position: absolute; bottom: 12px; left: 12px; background: rgba(0,0,0,0.75); color: #FFF; padding: 4px 12px; border-radius: 6px; font-size: 0.8rem;">
+          CAM 01: Perimeter Gate & Solar Light Post
+        </div>
+      </div>
+      <p style="font-size: 0.88rem; color: var(--text-muted); margin-top: 14px;">
+        Full multi-camera PTZ control is available to registered plot owners inside the Investor Portal.
+      </p>
+      <div style="display: flex; gap: 12px; margin-top: 20px;">
+        <button class="btn btn-gold open-sitevisit-modal" style="flex: 1;">Schedule Visit to Site</button>
+        <button class="btn btn-primary closeModalBtn" style="flex: 1;">Close Stream</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- STICKY FLOATING WHATSAPP & CALL INTEGRATION WIDGET -->
+  <div class="floating-contact-widget">
+    <a href="https://wa.me/918973057212?text=Hello%20UNUK%2C%20I%20am%20interested%20in%20your%20DTCP%20approved%20plots." target="_blank" class="float-btn float-wa" title="Chat on WhatsApp" aria-label="WhatsApp Chat">
+      <i class="fa-brands fa-whatsapp"></i>
+    </a>
+    <a href="tel:+918973057212" class="float-btn float-call" title="Call Concierge" aria-label="Call Specialist">
+      <i class="fa-solid fa-phone-volume"></i>
+    </a>
+  </div>
+
+  <script src="./app.js"></script>
+  <script>
+    const contactPageForm = document.getElementById('contactPageForm');
+    if (contactPageForm) {
+      contactPageForm.addEventListener('submit', (e) => {
+        e.preventDefault();
+        alert('Thank you for contacting UNUK Concierge! Our relationship manager will reach out to you within 15 minutes.');
+        contactPageForm.reset();
+      });
+    }
+  </script>
+</body>
+</html>
