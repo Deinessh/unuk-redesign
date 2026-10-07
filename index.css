@@ -866,13 +866,13 @@ body {
 
 .cam-btn {
   flex: 1;
-  background: #0B4A2C;
-  border: 1px solid #136F43;
-  color: #E6FBF2;
+  background: rgba(255, 255, 255, 0.15);
+  border: 1.5px solid #FFB343;
+  color: #FFFFFF;
   padding: 10px;
   border-radius: 8px;
-  font-size: 0.82rem;
-  font-weight: 700;
+  font-size: 0.85rem;
+  font-weight: 800;
   cursor: pointer;
   transition: var(--transition);
   text-align: center;
@@ -882,6 +882,7 @@ body {
   background: #FFB343;
   border-color: #FFB343;
   color: #063820;
+  font-weight: 900;
 }
 
 /* District Land Explorer - #FFB343 Yellow Card Box Background */
